@@ -1,0 +1,65 @@
+:root {
+  --primary: #7D5FFE;
+  --black: #000000;
+  --danger: #f5260b;
+  --white: #ffffff;
+  --gray: #d7d2d2;
+  --darkGray: #797979;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+button,
+input {
+  font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  padding: 3px;
+  border-radius: 10px;
+  height: 100px;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 2px;
+  padding: 5px;
+  /* background-color: #1C1B4D; */
+  /* Todo: add your project root colour */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input[type=number] {
+  appearance: textfield;
+}
