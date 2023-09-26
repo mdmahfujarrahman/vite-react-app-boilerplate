@@ -1,0 +1,112 @@
+.WhatIsWarpleWrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    z-index: 11;
+}
+
+.WhatIsWarpleContent{
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.WhatIsWarpleLeft{
+    padding: 20px;
+    flex:1
+}
+.WhatIsWarpleLeft img{
+    width: 471px;
+    height: 516px;
+}
+
+.WhatIsWarpleRight{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.WhatIsWarpleRightTitle{
+    color: var(--textSecondary);
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.WhatIsWarpleRightTitle:nth-child(3){
+    margin-bottom: 30px;
+    
+}
+
+.WhatIsWarpleRight hr{
+    width: 155px;
+    height: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-top: 1px solid var(--backgroundTernary);
+}
+
+.WhatIsWarpleRightPara {
+    color: var(--textPrimary);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.WhatIsWarpleAction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.WhatIsWarpleBtn{
+    height: 54px;
+    background-color: var(--buttonBackground);
+    border-radius: var(--buttonBorderRadis);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.WhatIsWarpleBtn p{
+    color: var(--testTernary);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 222px;
+}
+
+@media screen and (max-width: 767px){
+    .WhatIsWarpleContent{
+        flex-direction: column;
+        align-items: center;
+    }
+    .WhatIsWarpleRightTitle{
+        font-size: 34px;
+    }
+    .WhatIsWarpleLeft {
+        padding-bottom: 0px;
+    }
+    .WhatIsWarpleLeft, .WhatIsWarpleRight{
+        padding: 0;
+       
+    }
+
+    .WhatIsWarpleLeft img{
+        width: 380px;
+        height: 374px;
+    }
+    .WhatIsWarpleAction{
+        display: none;
+    }
+}

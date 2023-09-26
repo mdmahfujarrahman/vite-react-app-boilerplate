@@ -1,28 +1,16 @@
-import {
-    BrowserRouter as Router,
-    Route,
-    Routes,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-// routers
-import ProtectedRouter from "./ProtectedRouter/ProtectedRouter";
-import UnProtectedRouter from "./UnProtectedRouter/UnProtectedRouter";
-
-
+// screens
+import Home from "../screens/Home/Home";
 
 const RouterComponent = () => {
     return (
         <Router>
-            <Routes >
-                <Route element={<ProtectedRouter />}>
-
-                </Route>
-                <Route element={<UnProtectedRouter />}>
-
-                </Route>
+            <Routes>
+                <Route path={"/"} element={<Home />} />
             </Routes>
-        </Router >
-    )
-}
+        </Router>
+    );
+};
 
-export default RouterComponent
+export default RouterComponent;

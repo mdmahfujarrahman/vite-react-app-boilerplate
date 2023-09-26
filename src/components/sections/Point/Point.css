@@ -1,0 +1,83 @@
+.pointWrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    z-index: 11;
+}
+
+.pointContnet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1036px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+.pointLeft{
+    padding: 20px;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+
+.pointLeftIamge {
+    width: 518px;
+    height: 256px;
+}
+ .pointLeftIamge img {
+    width: 100%;
+    height: 100%;
+}
+.pointLeftItems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    max-width: 500px;
+    margin-bottom: 50px;
+}
+
+.pointLeftItems:nth-child(2){
+    width: 40% !important;
+}
+
+.secondItem{
+    align-self: flex-end;
+    position: absolute;
+    top: 450px;
+}
+
+
+@media screen and  (max-width: 767px){
+    .pointWrapper{
+        padding: 0;
+    }
+    .pointContnet{
+       flex-direction: column;
+    }
+    .pointLeft{
+        padding: 0px;
+        gap: 20px;
+    }
+ .pointLeftIamge {
+        width: 380px;
+        height: 238px;
+    }
+    .pointLeftItems{
+        width: 100%;
+    }
+    .pointLeftItems:nth-child(2){
+        width: 100% !important;
+    }
+    .secondItem{
+        position: relative;
+        top: 0;
+        width: 100%;
+
+    }
+    
+    
+}

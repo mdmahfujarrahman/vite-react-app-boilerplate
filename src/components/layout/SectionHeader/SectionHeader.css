@@ -1,0 +1,35 @@
+.headerWrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+.headerTitle{
+    color: var(--textSecondary);
+    font-family: Inter;
+    font-size: 92px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.headerSubTitle{
+    color: var(--textPrimary);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+@media screen and  (max-width: 767px){
+    .headerTitle{
+        font-size: 38px;
+        text-align: center;
+    }
+    .headerSubTitle{
+        font-size: 16px;
+    }
+}

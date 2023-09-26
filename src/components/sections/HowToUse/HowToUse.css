@@ -1,0 +1,66 @@
+.howToUseWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.howToUseHeader{
+    margin: 40px 0;
+}
+
+.howToUseProcessItmes{
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.howToUseProcessItme{
+    border: 1px solid var(--borderSecondary);
+    border-radius: 6px;
+}
+
+.howToUseProcessImg{
+    padding: 10px;
+    border-bottom: 1px solid var(--borderSecondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 140px;
+    width: 271px;
+}
+
+.warpleSearch{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+.howToUseProcessContent{
+    padding: 10px 20px 20px 20px;
+    color: var(--textSecondary);
+    font-family: Inter;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    border-bottom: 8px solid var(--borderSecondary);
+}
+
+.nextArrow{
+    margin: 0 10px;
+}
+
+@media screen and  (max-width: 767px){
+    .howToUseProcessItmes{
+        flex-direction: column;
+    }
+    .nextArrow{
+        margin: 15px 0px;
+    }
+    .nextArrow img{
+       transform: rotate(90deg);
+    }
+}

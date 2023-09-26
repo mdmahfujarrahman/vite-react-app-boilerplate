@@ -1,0 +1,221 @@
+.reasonWrapper{
+    background-color: var(--backgroundPrimary);
+   
+}
+.reasonContainer{
+    padding: 80px;
+    background-color: var(--backgroundTernary);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+   
+}
+
+.reasonPoint{
+    margin-top: 50px;
+}
+
+.reasonContent{
+    background-color: var(--backgroundPrimary);
+    position: relative;
+    border-radius: 4px;
+}
+.reasonPointcontainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.reasonPointLists{
+    width: 70%;
+    margin-bottom: 80px;
+}
+
+.reasonPointList{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--borderPrimary);
+
+}
+.reasonPointList img{
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+}
+
+
+.reasonPointList p{
+    color: var(--textPrimary);
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 33px;
+    font-style: normal;
+}
+.reasonPointList span{
+    color: var(--textSecondary);
+}
+
+.reasonPointItems{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 50px
+
+}
+.reasonPointItem{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.reasonPointImage{
+    position: relative;
+    margin-right: 30px;
+}
+.reasonPointImage img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.starIcon{
+    position: absolute;
+    top: -14px;
+    left: -12%;
+    height: 32px;
+    width: 32px;
+}
+.starIcon img{
+    width: 100%;
+    height: 100%;
+}
+
+.starIcon p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--testTernary);
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 16px;
+    font-style: normal;
+}
+
+
+.reasonPointContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.reasonPointContentTitle{
+    color: var(--textSecondary);
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    font-style: normal;
+}
+
+.reasonPointContent hr{
+    width: 92px;
+    height: 1px;
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid var(--backgroundTernary);
+}
+.reasonPointContentPara{
+    color: var(--textPrimary);
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    font-style: normal;
+}
+
+.travel{
+    position: absolute;
+    bottom: -180px;
+    right: -93px;
+    z-index: 2;
+}
+
+.memberRegistrationCont{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+@media screen and  (max-width: 767px){
+    .reasonContainer{
+        padding: 48px 10px 170px  10px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+       
+    }
+    .reasonContent{
+        border-radius: 40px;
+    }
+
+    .reasonPointLists{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .reasonPointList p{
+        color: var(--textPrimary);
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 33px;
+        font-style: normal;
+    }
+    .reasonPointItem{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .reasonPointImage{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .reasonPointContentTitle{
+        font-size: 20px;
+    }
+    .reasonPointContentPara{
+        font-size: 15px;
+    }
+
+    .reasonPointContent{
+        align-items: center;
+    }
+    .reasonPointContent hr{
+        width: 92px;
+        height: 1px;
+        margin: 20px 0;
+        border: none;
+        border-top: 1px solid var(--backgroundTernary);
+    }
+    .rightPlane{
+        display: none !important;
+    }
+
+    .leftPlane{
+        transform: rotate(-27deg);
+        top: -51%;
+        left: 10%;
+    }
+    .leftPlane img{
+        width: 141px;
+
+    }
+
+    .travel{
+        position: absolute;
+        bottom: -38%;
+        right: -93px;
+        z-index: 2;
+    }
+}

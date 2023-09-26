@@ -1,0 +1,96 @@
+.memberRegistrationWrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    width: 100%;
+    background-color: var(--backgroundTernary);
+}
+
+.memberRegistration{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.memberRegistrationTitle{
+    color: var(--textSecondary);
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    font-style: normal;
+    text-align: center;
+    z-index: 1;
+}
+.memberRegistrationfirstTitle::before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 34%;
+    width: 108px;
+    height: 30px;
+    background-color: var(--backgroundPrimary);
+    z-index: -3;
+}
+.memberRegistrationfirstTitle::after{
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 37%;
+    width: 108px;
+    height: 30px;
+    background-color: var(--backgroundPrimary);
+    z-index: -3;
+}
+
+
+
+.memberRegistrationBtn{
+    margin: 30px 0;
+    height: 44px;
+    background-color: var(--buttonBackground);
+    border-radius: var(--buttonBorderRadis);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.memberRegistrationBtn p{
+    color: var(--testTernary);
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18.15px;
+    width: 208px;
+}
+
+.planeRight{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.planeLeft{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@media screen and  (max-width: 767px){
+    .memberRegistrationfirstTitle::before{
+        top: 100px;
+    left: 8%;
+    }
+    .memberRegistrationfirstTitle::after{
+        top: 99px;
+        right: 13%;
+      
+}
+}
